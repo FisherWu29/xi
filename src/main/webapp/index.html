@@ -6,7 +6,36 @@
     <title></title>
 </head>
 <body>
-    <div>Hello Index!</div>
+<form action="addPerson" method="get">
+    <label for="name">name:</label>
+    <input type="text" id="name" name="name"><br/>
+    <label for="age">age:</label>
+    <input type="number" name="age" id="age"><br/>
+    选择性别：
+    <label for="male">男:</label>
+    <input type="radio" name="sex" value="男" id="male">
+    <label for="female">女:</label>
+    <input type="radio" id="female" name="sex" value="女"><br/>
+    <label for="city">选择城市：</label>
+    <select name="city_id" id="city">
+        <option value="1">广东</option>
+        <option value="2" selected>湖南</option>
+        <option value="3">江西</option>
+        <option value="4">广西</option>
+    </select>
+    <br/>
+    <label for="profession">选择职业：</label>
+    <select name="profession_id" id="profession">
+        <option value="1">前端</option>
+        <option value="2">设计师</option>
+        <option value="3">测试</option>
+        <option value="4">服务端</option>
+        <option value="5">产品</option>
+        <option value="6">老板</option>
+    </select>
+    <br/>
+    <input type="submit" value="提交">
+</form>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
