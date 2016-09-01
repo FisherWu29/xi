@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xi.bean.Person">
+
+    <!--<resultMap type="com.jie0.store.model.City" id="CityResult">-->
+        <!--<result column="FID" javaType="int" jdbcType="INTEGER" property="id"/>-->
+        <!--<result column="FNAME" javaType="string" jdbcType="VARCHAR" property="name"/>-->
+        <!--<result column="FPROVINCEID" javaType="int" jdbcType="INTEGER" property="provinceId"/>-->
+        <!--<result column="FCODE" javaType="string" jdbcType="VARCHAR" property="code"/>-->
+        <!--<result column="FORDER" javaType="int" jdbcType="INTEGER" property="order"/>-->
+    <!--</resultMap>-->
+
+
+    <select id="getPersonByName" parameterType="java.lang.String" resultType="com.xi.bean.Person">
+        SELECT  name FROM person WHERE  name=#{name}
+    </select>
+
+</mapper>
