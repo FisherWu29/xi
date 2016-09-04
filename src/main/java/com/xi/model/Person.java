@@ -1,22 +1,12 @@
-package com.xi.bean;
+package com.xi.model;
 
 /**
- * Created by QAQ on 2016/8/22.
+ * Created by mayned on 2016/9/3.
  */
 public class Person {
-    private int id;
     private String name;
     private int age;
     private String sex;
-    private String profession;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -42,11 +32,8 @@ public class Person {
         this.sex = sex;
     }
 
-    public String getProfession() {
-        return profession;
-    }
-
-    public void setProfession(String profession) {
-        this.profession = profession;
+    @Override
+    public String toString() {
+        return "Person:name="+this.name;
     }
 }
