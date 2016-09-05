@@ -15,8 +15,8 @@ public class PersonService2 {
     @Autowired
     PersonMapper personMapper;
 
-    public List<Person> getPersonList() {
-        List<Person> personList = personMapper.getPersonList();
+    public List<Person> getPersonList1() {
+        List<Person> personList = personMapper.getPersonList1();
         return personList;
     }
 }

@@ -12,7 +12,7 @@
 
 
     <select id="getPersonList" resultType="Person">
-        SELECT  * FROM person
+        SELECT  * FROM person WHERE NAME = "阿喜"
     </select>
 
 </mapper>
